@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html ng-app="testFilter">
+  <head>
+    <title>Test</title>
+    <script src="./vendors/angular.min.js" charset="utf-8"></script>
+    <script src="./scripts/script.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+  </head>
+  <body ng-controller="main">
+    <div ng-repeat="person in people track by $index">{{person | excited}}</div>
+    <div ng-repeat="person in people track by $index">{{person | noMs}}</div>
+  </body>
+</html>
